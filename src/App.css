@@ -1,0 +1,153 @@
+
+
+body {
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #2e003e, #800080, #ffd700);
+  margin: 0;
+  padding: 0;
+  color: #f9eaff;
+  width: 100%;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
+}
+
+
+
+/* Container Layout */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 2.5rem;
+  background: rgba(255, 240, 255, 0.07);
+  border-radius: 25px;
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.3), 0 0 60px rgba(186, 104, 200, 0.2);
+  border: 2px solid #d4af37;
+  backdrop-filter: blur(15px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #ffb6ff;
+  font-family: 'Cinzel Decorative', cursive;
+  text-shadow: 0 0 5px gold, 0 0 15px #ff8af5;
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 1.2rem;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  justify-content: center;
+  width: 700px;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 2rem;
+}
+
+input, select {
+  padding: 12px;
+  
+  border: 2px solid #e0aaff;
+  border-radius: 14px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffe6ff;
+  font-size: 1rem;
+  backdrop-filter: blur(10px);
+}
+
+input::placeholder {
+  color: #f5ccff;
+}
+
+button {
+  background: linear-gradient(to right, #ff69b4, #d7a9e3, #ffd700);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 14px rgba(255, 182, 193, 0.5);
+}
+
+button:hover {
+  background: linear-gradient(to right, gold, #ff4de7);
+  color: #4b0049;
+  transform: scale(1.05);
+}
+
+/* Goal Cards */
+.goal-card {
+  background: linear-gradient(135deg, rgba(255, 182, 255, 0.07), rgba(187, 136, 255, 0.09));
+  border: 2px solid #eec3ff;
+  border-left: 8px solid #ff69b4;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(186, 104, 200, 0.3);
+}
+
+.goal-card h4 {
+  margin-top: 0;
+  color: #ffd1f6;
+}
+
+/* Progress Bar */
+.progress-bar {
+  position: relative;
+  background: #3b0a4d;
+  border-radius: 50px;
+  height: 24px;
+  overflow: hidden;
+  margin-top: 15px;
+  border: 1px solid gold;
+}
+
+.progress-bar-filler {
+  height: 100%;
+  background: linear-gradient(to right, #ff69b4, #ba68c8, gold);
+  transition: width 0.5s ease-in-out;
+  border-radius: 50px;
+}
+
+.progress-bar-label {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  line-height: 24px;
+}
+
+/* Links */
+a {
+  color: #ffc8ff;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+a:hover {
+  color: gold;
+  text-shadow: 0 0 6px #ff9dfb;
+}
+
+
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}

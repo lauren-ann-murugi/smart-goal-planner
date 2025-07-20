@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+# Smart Goal Planner
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a personal React project I built to help users manage their financial savings goals. It allows users to create, edit, delete, and track progress on multiple goals with a focus on clear deadlines and visual feedback.
 
-## Available Scripts
+---
+<img width="1896" height="617" alt="Screenshot 2025-07-20 234452" src="https://github.com/user-attachments/assets/795e4197-0406-4ff6-9e48-b81002eb0d47" />
+<img width="1804" height="689" alt="Screenshot 2025-07-20 234523" src="https://github.com/user-attachments/assets/a2654670-fe95-4932-9661-730e61ef4d2b" />
+<img width="1744" height="263" alt="Screenshot 2025-07-20 234544" src="https://github.com/user-attachments/assets/4858a6ef-637e-4489-8a2d-1597ca7eb513" />
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+### 1. Create New Goals
+Users can create a new savings goal by filling in:
+- Name of the goal
+- Target amount
+- Category (e.g., Travel, Business, Education)
+- Deadline
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+All goals are timestamped with the creation date for better tracking.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+### 2. Track Progress Visually
+Each goal displays a progress bar that updates based on how much has been saved toward the target. The percentage is calculated and color-coded depending on the progress.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+### 3. Make Deposits
+There's a dedicated form for depositing money into any existing goal. When a deposit is made, the saved amount updates in real-time and reflects in the progress bar.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 4. Edit or Delete Goals
+Users can update any part of a goal’s data or remove a goal entirely. Editing is handled via an embedded form inside each goal card.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+### 5. Overview Dashboard
+At the top of the app, there's a summary section that displays:
+- Total number of goals
+- Total amount saved across all goals
+- Number of completed goals (when savedAmount ≥ targetAmount)
+- Warnings for goals approaching or past their deadline
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technical Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Frontend:** React (Functional Components + Hooks)
+- **API:** JSON Server (`db.json` on `localhost:3001`)
+- **Styling:** Custom CSS with a luxe, classic aesthetic
+- **State Management:** Local state with `useState` and `useEffect`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Challenges I Solved
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Managing controlled forms for multiple components
+- Keeping global `goals` state in sync with server updates
+- Updating nested goal data without mutating state
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+##  Steps I Took to Push My Project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 1. Navigate to My Project Folder and Initialize Git
 
-### Analyzing the Bundle Size
+```
+cd smart-goal-planner
+git init
+```
+### 2. Add My Project Files to Git Tracking
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+git add .
+```
 
-### Making a Progressive Web App
+### 3.  Commit the Files Locally
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+git commit -m "Initial commit - Smart Goal Planner project"
+```
 
-### Advanced Configuration
+### 4. Link My Local Repo to the GitHub Repository
+```
+git remote add origin https://github.com/<my-username>/smart-goal-planner.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 5.  Push My Code to GitHub
+```
+git branch -M main
+git push -u origin main
+```
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+
+

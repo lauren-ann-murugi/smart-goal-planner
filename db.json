@@ -3,7 +3,7 @@
     {
       "id": "5205",
       "name": "GYM Membership",
-      "targetAmount": 150,
+      "targetAmount": 200,
       "savedAmount": 70,
       "category": "Health and Fitness",
       "deadline": "2025-07-31",
@@ -35,6 +35,15 @@
       "category": "Savings",
       "deadline": "2025-08-01",
       "createdAt": "2025-07-20"
+    },
+    {
+      "id": "0326",
+      "name": "New clothes",
+      "targetAmount": 100000,
+      "savedAmount": 100000,
+      "category": "fashion",
+      "deadline": "2025-07-24",
+      "createdAt": "2025-07-21"
     }
   ]
 }
